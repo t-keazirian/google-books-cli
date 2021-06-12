@@ -20,6 +20,9 @@
 
 ### How to Use:
 
+#### Help:
+* in command line prompt, type ``` gbooks-cli help ``` for a list of the commands this application uses and how to use them properly
+
 #### To Search for Books:
 * in command line prompt, type ``` gbooks-cli search --keyword yourSearchTermHere``` (changing ``` yourSearchTerm ``` here to the keyword you are searching)
 * if your search includes spaces, please use quotation marks
