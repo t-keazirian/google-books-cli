@@ -9,3 +9,7 @@ Hello world
 /Users/taylorkeazirian/.nvm/versions/node/v14.17.0/lib/node_modules/google-books-cli -> /Users/taylorkeazirian/Desktop/8thLight/google-books-cli
 
 ** use quotations for more than one word
+
+search: gbooks-cli search --keyword 'stephen king'
+
+save: gbooks-cli save --id tPTcmgEACAAJ

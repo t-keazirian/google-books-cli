@@ -1,5 +1,6 @@
 // npm package that allows for fetch calls to APIs
 const fetch = require('node-fetch');
+// const axios = require('axios');
 
 module.exports = keyword => {
 	const results = fetch(

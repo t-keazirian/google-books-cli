@@ -2,7 +2,7 @@ const menus = {
 	main: `
     gbooks-cli [command] <options>
 
-    search ........ search for a book with given keyword
+    search ........ search for 5 books with given keyword
     save ......... save selected book with ID to reading list
     help ........ show help menu for a command
   `,
