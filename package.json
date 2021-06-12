@@ -1,0 +1,19 @@
+{
+	"name": "google-books-cli",
+	"version": "1.0.0",
+	"description": "8th Light Coding Challenge",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bin": {
+		"gbooks-cli": "bin/gbooks-cli"
+	},
+	"dependencies": {
+		"minimist": "^1.2.5",
+		"node-fetch": "^2.6.1"
+	}
+}
