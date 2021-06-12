@@ -12,17 +12,18 @@
 2. install dependencies: 
 * ``` npm i node-fetch ``` for fetch calls to API (see documentation below)
 * ```npm i minimist ``` - argument parser (see documentation below)
-3. create bin directory ``` mkdir bin ```
-4. inside bin directory, create file for the command line we will be using ``` touch gbooks-cli ```
-5. type into command line at root ``` chmod +x bin/gbooks-cli ``` - this is a "shebang" and will allow us to execute the commands in our command line for this application
-6. run ``` npm link ``` in the root will "symlink the binary file to the system path, making it accessible from anywhere by running ``` gbooks-cli ``` " (see sources below)
+3. create bin directory: ``` mkdir bin ```
+4. ``` cd bin ```
+5. inside bin directory, create file for the command line prompt we will be using: ``` touch gbooks-cli ```
+6. type into command line at root ``` chmod +x bin/gbooks-cli ``` - this is a "shebang" and will allow us to execute the commands in our command line for this application
+7. type ``` npm link ``` in the root; this will "symlink the binary file to the system path, making it accessible from anywhere by running ``` gbooks-cli ``` " (see sources below)
 
 ### How to Use:
 
 #### To Search for Books:
 * in command line prompt, type ``` gbooks-cli search --keyword yourSearchTermHere``` (changing ``` yourSearchTerm ``` here to the keyword you are searching)
 * if your search includes spaces, please use quotation marks
-- example: ``` gbooks-cli search --keyword "stephen king" ```
+example: ``` gbooks-cli search --keyword "stephen king" ```
 * Command line will display each book's ID, title, author, and publisher
 
 #### To Save a Book To Reading List:
@@ -37,6 +38,7 @@
 * [Google Books API Documentation](https://developers.google.com/books/docs/overview)
 * [Node.js fs documentation](https://nodejs.org/api/fs.html)
 * [Command line app example](https://pusher.com/tutorials/node-command-line-app)
+* [NPM Minimist Documentation](https://www.npmjs.com/package/minimist)
 
 ### New Things Learned:
 * how to create a command line application
