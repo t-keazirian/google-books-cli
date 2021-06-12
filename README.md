@@ -23,7 +23,8 @@
 #### To Search for Books:
 * in command line prompt, type ``` gbooks-cli search --keyword yourSearchTermHere``` (changing ``` yourSearchTerm ``` here to the keyword you are searching)
 * if your search includes spaces, please use quotation marks
-example: ``` gbooks-cli search --keyword "stephen king" ```
+
+For example: ``` gbooks-cli search --keyword "stephen king" ```
 * Command line will display each book's ID, title, author, and publisher
 
 #### To Save a Book To Reading List:
