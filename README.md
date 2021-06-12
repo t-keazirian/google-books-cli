@@ -35,7 +35,7 @@ For example: ``` gbooks-cli search --keyword "stephen king" ```
 
 ### Helpful Resources:
 
-* [Creating a Real World CLI](https://timber.io/blog/creating-a-real-world-cli-app-with-node/) - this was the most helpful resource
+* [Creating a Real World CLI](https://timber.io/blog/creating-a-real-world-cli-app-with-node/) - this was the most helpful resource which taught me most of what I did for this project
 * [Google Books API Documentation](https://developers.google.com/books/docs/overview)
 * [Node.js fs documentation](https://nodejs.org/api/fs.html)
 * [Command line app example](https://pusher.com/tutorials/node-command-line-app)

@@ -3,7 +3,6 @@ const minimist = require('minimist');
 module.exports = () => {
 	const args = minimist(process.argv.slice(2));
 	let cmd = args._[0] || 'help';
-	// console.log(args);
 
   if (args.help || args.h) {
     cmd = 'help'
