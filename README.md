@@ -38,7 +38,7 @@ See below for detailed command line instructions...
 
 #### To Search for Books:
 
-- in command line prompt, type ` gbooks-cli search --keyword yourSearchTermHere` (changing `yourSearchTerm` here to the keyword you are searching)
+- in command line prompt, type ` gbooks-cli search --keyword yourSearchTermHere` (changing `yourSearchTerm` here to the book title, keyword, or author you are searching for)
 - if your search includes spaces, please use quotation marks
 
 For example: `gbooks-cli search --keyword "stephen king"`
@@ -47,8 +47,8 @@ For example: `gbooks-cli search --keyword "stephen king"`
 
 #### To Save a Book To Reading List:
 
-- locate and copy the `id` of the book you would like to save to your reading list (the `id` will be in your search results in blue)
-- in command line prompt, type ` gbooks-cli save --id yourBookId` (changing `yourBookId` to the ID you have selected from the search list)
+- locate and copy (highlight the ID and use cmd+c on Mac, ctrl+c on Windows) the `id` of the book you would like to save to your reading list (the `id` will be in your search results in blue)
+- in command line prompt, type ` gbooks-cli save --id yourBookId` (changing `yourBookId` to the ID you have selected from the search list using cmd+v on Mac, ctrl+v on Windows to paste the id)
 - your new book's information will save to your `reading-list.txt` file
 
 #### To Print Your Reading List:
