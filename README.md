@@ -62,6 +62,7 @@ For example: `gbooks-cli search --keyword "stephen king"`
 - [Node.js fs documentation](https://nodejs.org/api/fs.html)
 - [Command line app example](https://pusher.com/tutorials/node-command-line-app)
 - [NPM Minimist Documentation](https://www.npmjs.com/package/minimist)
+- [NPM Chalk Documentation](https://www.npmjs.com/package/chalk)
 
 ### New Things Learned:
 
