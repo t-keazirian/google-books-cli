@@ -7,19 +7,22 @@
 - A user should be able to select a book from the five displayed to save to a “Reading List”
 - View a “Reading List” with all the books the user has selected from their queries -- this is a local reading list and not tied to Google Books' account features.
 
-## Steps to create this CLI:
+## Steps to Create this CLI:
 
 1. `npm init` to create a package.json file where we will add our dependencies used for the project
 2. install dependencies:
 
 - `npm i node-fetch` for fetch calls to API (see documentation below)
 - `npm i minimist ` - argument parser (see documentation below)
+- `npm i ora ` - 
 
 3. create bin directory: `mkdir bin`
 4. `cd bin`
 5. inside bin directory, create file for the command line prompt we will be using: `touch gbooks-cli`
 6. type into command line at root `chmod +x bin/gbooks-cli` - this is a "shebang" and will allow us to execute the commands in our command line for this application
 7. type `npm link` in the root; this will "symlink the binary file to the system path, making it accessible from anywhere by running `gbooks-cli` " (see sources below)
+
+### Steps to Use this...
 
 ### How to Use:
 

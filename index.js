@@ -4,9 +4,9 @@ module.exports = () => {
 	const args = minimist(process.argv.slice(2));
 	let cmd = args._[0] || 'help';
 
-  if (args.help || args.h) {
-    cmd = 'help'
-  }
+	if (args.help || args.h) {
+		cmd = 'help';
+	}
 
 	switch (cmd) {
 		case 'search':
@@ -15,8 +15,11 @@ module.exports = () => {
 		case 'save':
 			require('./commands/save')(args);
 			break;
-    case 'help':
-      require('./commands/help')(args)
+		case 'help':
+			require('./commands/help')(args);
+			break;
+		case 'list':
+			require('./commands/list')(args);
       break;
 		default:
 			console.error(`${cmd} is not a valid command!`);

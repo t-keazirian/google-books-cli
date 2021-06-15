@@ -1,14 +1,6 @@
-const searchForBooks = require('../utils/searchForBooks')
+const searchForBooks = require('../utils/searchForBooks');
 
 module.exports = args => {
-  try {
-    const keyword = args.keyword
-    const books = searchForBooks(keyword)
-    console.log(books);
-
-  }
-  catch (err) {
-    console.error(err)
-  }
-}
-
+	const keyword = args.keyword;
+	return searchForBooks(keyword).then(console.log).catch(console.log);
+};
