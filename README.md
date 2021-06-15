@@ -66,14 +66,10 @@ For example: `gbooks-cli search --keyword "stephen king"`
 ### New Things Learned:
 
 - how to create a command line application
-- using shebang's in my project
+- using shebang in my project
 - using `npm link` mentioned above
 - creating different commands and flags and executing all in the command line
 
 ### To Add in the Future:
 
 - Testing
-
-#### Options:
-
-- Change the fetch calls to use axios/async await - it works with fetch but can be converted
