@@ -18,6 +18,6 @@ module.exports = keyword => {
 			});
 			
 			// return output;
-			return chalk.bold.greenBright`\nYour Book Search Results:\n\n`+`${output}`
+			return chalk.bold.greenBright`\nYour Search Results:\n\n`+`${output}`
 		});
 };

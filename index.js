@@ -1,4 +1,5 @@
 const minimist = require('minimist');
+const chalk = require('chalk');
 
 module.exports = () => {
 	const args = minimist(process.argv.slice(2));
@@ -22,7 +23,7 @@ module.exports = () => {
 			require('./commands/list')(args);
       break;
 		default:
-			console.error(`${cmd} is not a valid command!`);
+			console.error(chalk.redBright`${cmd} is not a valid command! Try typing 'gbooks-cli help' for a list of valid commands.`);
 			break;
 	}
 };
