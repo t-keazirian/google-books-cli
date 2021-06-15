@@ -1,6 +1,5 @@
 const printList = require('../utils/printList');
 
-module.exports = args => {
-	// const list = args.list;
+module.exports = () => {
 	return printList();
 };

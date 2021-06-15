@@ -14,7 +14,7 @@
 
 - `npm i node-fetch` for fetch calls to API (see documentation below)
 - `npm i minimist ` - argument parser (see documentation below)
-- `npm i ora ` - 
+- `npm i chalk` - to add some flare and color to your command line interface!
 
 3. create bin directory: `mkdir bin`
 4. `cd bin`
@@ -22,9 +22,15 @@
 6. type into command line at root `chmod +x bin/gbooks-cli` - this is a "shebang" and will allow us to execute the commands in our command line for this application
 7. type `npm link` in the root; this will "symlink the binary file to the system path, making it accessible from anywhere by running `gbooks-cli` " (see sources below)
 
-### Steps to Use this...
+### How to Clone and Use In Local Environment:
 
-### How to Use:
+1. Open your command line, navigate to the folder where you would like to store this project, and type in the following to clone this repository:
+
+`git clone https://github.com/t-keazirian/google-books-cli.git`
+
+2. `npm i` to install the dependencies used in this project 
+
+See below for detailed command line instructions...
 
 #### Help:
 
@@ -41,9 +47,13 @@ For example: `gbooks-cli search --keyword "stephen king"`
 
 #### To Save a Book To Reading List:
 
-- locate and copy the `id` of the book you would like to save to your reading list (the `id` will be in your search results)
+- locate and copy the `id` of the book you would like to save to your reading list (the `id` will be in your search results in blue)
 - in command line prompt, type ` gbooks-cli save --id yourBookId` (changing `yourBookId` to the ID you have selected from the search list)
-- your new book's information will save to your `reading-list` file
+- your new book's information will save to your `reading-list.txt` file
+
+#### To Print Your Reading List:
+
+- in your command line prompt, type `gbooks-cli list`
 
 ### Helpful Resources:
 
