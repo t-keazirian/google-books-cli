@@ -54,6 +54,7 @@ For example: `gbooks-cli search --keyword "stephen king"`
 #### To Print Your Reading List:
 
 - in your command line prompt, type `gbooks-cli list`
+- all books saved to your reading list will display in your command line
 
 ### Helpful Resources:
 
