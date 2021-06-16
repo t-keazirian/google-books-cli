@@ -16,8 +16,6 @@ module.exports = keyword => {
 					chalk.yellow`Publisher: ${book.volumeInfo.publisher}\n` +
 					chalk.magenta`--------------\n`;
 			});
-			
-			// return output;
-			return chalk.bold.greenBright`\nYour Search Results:\n\n`+`${output}`
+			return chalk.bold.greenBright`\nYour Search Results:\n\n` + `${output}`;
 		});
 };

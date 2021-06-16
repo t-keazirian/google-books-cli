@@ -27,7 +27,3 @@ module.exports = () => {
 			break;
 	}
 };
-
-// module.exports = () => {
-//   console.log('Hello world');
-// }
