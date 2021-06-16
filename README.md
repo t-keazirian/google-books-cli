@@ -42,6 +42,7 @@ See below for detailed command line instructions...
 - if your search includes spaces, please use quotation marks
 
 Example with One Word Search: `gbooks-cli search --keyword ferrets`
+
 Example with Quotation Marks: `gbooks-cli search --keyword "stephen king"`
 
 - Command line will display each book's ID, title, author, and publisher
