@@ -41,7 +41,8 @@ See below for detailed command line instructions...
 - in command line prompt, type ` gbooks-cli search --keyword yourSearchTermHere` (changing `yourSearchTerm` here to the book title, keyword, or author you are searching for)
 - if your search includes spaces, please use quotation marks
 
-For example: `gbooks-cli search --keyword "stephen king"`
+Example with One Word Search: `gbooks-cli search --keyword ferrets`
+Example with Quotation Marks: `gbooks-cli search --keyword "stephen king"`
 
 - Command line will display each book's ID, title, author, and publisher
 
