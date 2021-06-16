@@ -14,13 +14,13 @@
 
 - `npm i node-fetch` for fetch calls to API (see documentation below)
 - `npm i minimist ` - argument parser (see documentation below)
-- `npm i chalk` - to add some flare and color to your command line interface!
+- `npm i chalk` - to add some flare and color to your command line interface! (see documentation below)
 
 3. create bin directory: `mkdir bin`
 4. `cd bin`
 5. inside bin directory, create file for the command line prompt we will be using: `touch gbooks-cli`
 6. type into command line at root `chmod +x bin/gbooks-cli` - this is a "shebang" and will allow us to execute the commands in our command line for this application
-7. type `npm link` in the root; this will "symlink the binary file to the system path, making it accessible from anywhere by running `gbooks-cli` " (see sources below)
+7. type `npm link` in the root; this will "symlink the binary file to the system path, making it accessible from anywhere by running `gbooks-cli` " (this came from the first source listed below)
 
 ### How to Clone and Use In Local Environment:
 
