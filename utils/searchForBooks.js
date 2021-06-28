@@ -38,10 +38,10 @@ module.exports = async keyword => {
 			`https://www.googleapis.com/books/v1/volumes?q=${keyword}&printType=books&startIndex=0&maxResults=5&projection=lite`
 		);
 		const data = await response.json();
-		searchOptions.titleDescription(data);
+		searchOptions.fullSearch(data);
 	} catch (err) {
 		console.log(
-			chalk.red`An error occurred! Please check that the API is working and try again. Developer Error Notes: ${err.message}. `
+			chalk.red`An error occurred! Please check that the API is working and try again.\nDeveloper Error Notes: ${err.message}. `
 		);
 	}
 };
