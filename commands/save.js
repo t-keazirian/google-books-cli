@@ -8,7 +8,10 @@ module.exports = args => {
 			chalk.red`Incorrect book ID. Please check that your ID is correct and try again.`
 		);
 		return;
-	} else {
-		saveById(id).then(console.log).catch(console.log);
+	}
+	try {
+		saveById(id);
+	} catch (err) {
+		console.log(err);
 	}
 };
