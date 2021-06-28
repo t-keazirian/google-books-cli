@@ -6,17 +6,21 @@ module.exports = async id => {
 	try {
 		const idResponse = await fetch(
 			`https://www.googleapis.com/books/v1/volumes/${id}`
-		)
-		const idData = await idResponse.json()
+		);
+		const idData = await idResponse.json();
 		let newBook = `\nId: ${idData.id}\nTitle: ${idData.volumeInfo.title}\nAuthor(s): ${idData.volumeInfo.authors}\nPublisher: ${idData.volumeInfo.publisher}\n`;
 		return fs.promises
 			.appendFile('./reading-list', newBook)
-			.then(
-				() =>
-					console.log(chalk.green`${newBook}\n` +
-					chalk.green.bold.underline`${idData.volumeInfo.title}` + chalk.blue` has been added to your book list!\n`
-			));
+			.then(() =>
+				console.log(
+					chalk.green`${newBook}\n` +
+						chalk.green.bold.underline`${idData.volumeInfo.title}` +
+						chalk.blue` has been added to your book list!\n`
+				)
+			);
 	} catch (err) {
-		console.log(chalk.red`An error occurred! Please check that the API is working and try again. Developer Error Notes: ${err.message}. `);
+		console.log(
+			chalk.red`An error occurred! Please check that the API is working and try again. Developer Error Notes: ${err.message}. `
+		);
 	}
 };
