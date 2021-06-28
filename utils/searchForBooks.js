@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 const chalk = require('chalk');
 
-// to use the different search options, change the code on line 42 to either fullSearch or titleDescription
+// to use the different search options, change the code on line 42 to either searchOptions.fullSearch or searchOptions.titleDescription
 const searchOptions = {
 	fullSearch: data => {
 		let output = '';
@@ -12,8 +12,7 @@ const searchOptions = {
 				chalk.green.underline.bold`${book.volumeInfo.title}\n` +
 				chalk.green`Author(s): ` +
 				chalk.green.bold`${book.volumeInfo.authors}\n` +
-				chalk.green`Publisher: ` +
-				chalk.green`${book.volumeInfo.publisher}\n` +
+				chalk.green`Publisher: ${book.volumeInfo.publisher}\n` +
 				chalk.gray`--------------\n`;
 		});
 		console.log(chalk.bold.gray`\nYour Search Results:\n\n` + `${output}`);
@@ -42,7 +41,7 @@ module.exports = async keyword => {
 		searchOptions.fullSearch(data);
 	} catch (err) {
 		console.log(
-			chalk.red`An error occurred! Please check that the API is working and try again.\nDeveloper Error Notes: ${err.message}. `
+			chalk.red`An error occurred! Please ensure that you are using the correct command and that the API is working and try again.\nDeveloper Error Notes: ${err.message}. `
 		);
 	}
 };

@@ -12,6 +12,6 @@ module.exports = args => {
 	try {
 		searchForBooks(keyword);
 	} catch (err) {
-		console.log(err);
+		console.log(`An error occurred: ${err}`);
 	}
 };

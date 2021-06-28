@@ -12,6 +12,6 @@ module.exports = args => {
 	try {
 		saveById(id);
 	} catch (err) {
-		console.log(err);
+		console.log(`An error occurred: ${err}`);
 	}
 };

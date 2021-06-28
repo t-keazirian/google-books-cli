@@ -20,7 +20,7 @@ module.exports = async id => {
 			);
 	} catch (err) {
 		console.log(
-			chalk.red`An error occurred! Please ensure you have pasted the correct book ID and/or the API is working.\nDeveloper Error Notes: ${err.message}. `
+			chalk.red`An error occurred! Please ensure you have pasted the correct book ID and that the API is working.\nDeveloper Error Notes: ${err.message}. `
 		);
 	}
 };
