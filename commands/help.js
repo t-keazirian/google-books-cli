@@ -17,16 +17,16 @@ const menus = {
 
   * for help for individual commands and examples, type 'gbooks-cli help' + either: search, save, or list *
   `,
-	search: chalk.green`
+	search: chalk.red`
     gbooks-cli search --keyword <options>
     * please use quotes for keyword with spaces *
     Example: gbooks-cli search --keyword 'stephen king'
   `,
-	save: chalk.green`
+	save: chalk.red`
   gbooks-cli save --id <idGoesHere>
   Example: gbooks-cli save --id pXISEAAAQBAJ
   `,
-	list: chalk.green`
+	list: chalk.red`
   gbooks-cli list
   `,
 };
