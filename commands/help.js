@@ -15,7 +15,7 @@ const menus = {
 
   HELP: help ........ show help menu for a command
 
-  * help for individual commands and examples, type 'gbooks-cli help' + either: search, save, or list *
+  * for help for individual commands and examples, type 'gbooks-cli help' + either: search, save, or list *
   `,
 	search: chalk.green`
     gbooks-cli search --keyword <options>
