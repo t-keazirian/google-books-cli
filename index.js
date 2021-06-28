@@ -23,7 +23,7 @@ module.exports = () => {
 			require('./commands/list')(args);
       break;
 		default:
-			console.error(chalk.redBright`${cmd} is not a valid command! Try typing 'gbooks-cli help' for a list of valid commands.`);
+			console.error(chalk.red`${cmd} is not a valid command! Try typing 'gbooks-cli help' for a list of valid commands.`);
 			break;
 	}
 };

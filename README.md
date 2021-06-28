@@ -47,6 +47,10 @@ Example with Quotation Marks: `gbooks-cli search --keyword "stephen king"`
 
 - Command line will display each book's ID, title, author, and publisher
 
+- If you would like to display the Title and Description only, change the method in `searchForBooks.js` from `searchOptions.fullSearch(data)` to `searchOptions.titleDescription(data)`
+
+- You can also feel free to add other methods to the searchOptions object in `searchForBooks.js` to display different data from the API depending on your needs
+
 #### To Save a Book To Reading List:
 
 - locate and copy (highlight the ID and use cmd+c on Mac, ctrl+c on Windows) the `id` of the book you would like to save to your reading list (the `id` will be in your search results in blue)

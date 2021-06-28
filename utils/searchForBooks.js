@@ -1,6 +1,7 @@
 const fetch = require('node-fetch');
 const chalk = require('chalk');
 
+// to use the different search options, change the code on line 42 to either fullSearch or titleDescription
 const searchOptions = {
 	fullSearch: data => {
 		let output = '';
@@ -12,7 +13,7 @@ const searchOptions = {
 				chalk.green`Author(s): ` +
 				chalk.green.bold`${book.volumeInfo.authors}\n` +
 				chalk.green`Publisher: ` +
-				chalk.green.bold`${book.volumeInfo.publisher}\n` +
+				chalk.green`${book.volumeInfo.publisher}\n` +
 				chalk.gray`--------------\n`;
 		});
 		console.log(chalk.bold.gray`\nYour Search Results:\n\n` + `${output}`);
