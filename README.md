@@ -47,7 +47,7 @@ Example with Quotation Marks: `gbooks-cli search --keyword "stephen king"`
 
 - Command line will display each book's ID, title, author, and publisher
 
-- If you would like to display the Title and Description only, change the method in `searchForBooks.js` from `searchOptions.fullSearch(data)` to `searchOptions.titleDescription(data)`
+- If you would like to display the Title and Description only, change the method in `searchForBooks.js` from `searchOptions.fullSearch(data)` to `searchOptions.titleDescription(data)` on line 42
 
 - You can also feel free to add other methods to the searchOptions object in `searchForBooks.js` to display different data from the API depending on your needs
 
